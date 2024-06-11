@@ -15,11 +15,12 @@ const findAll = async (req, res) => {
 const create = async (req, res) => {
   const { roommate, descripcion, monto } = req.body;
 
-  console.log(req.body)
+
   try {
     const { gastos } = JSON.parse(
       fs.readFileSync("./data/gastos_data.json", "utf8")
     );
+  
     const id = uuidv4().slice(0, 6);
     const fecha = moment().format("DD/MM/YYYY");
     const newGasto = {

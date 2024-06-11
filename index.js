@@ -7,7 +7,7 @@ const { PORT } = process.env;
 const __dirname = path.resolve();
 const app = express();
 
-//SUBO EL PROYECTO PERO ME FALTO PARA TERMINAR NO LOGRE HACER QUE ACTUALIZARA Y TAMPOCO LO DE LOS MONTOS´´
+//PROFESOR NO TERMINO AUN EL PROYECTO 
 app.use(express.json());
 
 app.use(roommate);
